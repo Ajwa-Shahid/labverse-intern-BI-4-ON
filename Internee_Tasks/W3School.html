@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 1 -->
+
+    <h1>My first JS Code</h1>
+    <button onclick="document.getElementById('date').innerHTML = Date()">Click me to display Date and Time</button>
+    <p id="date">Click to change View Current Date</p>
+
+    <!-- 2 -->
+
+    <h1>JS can change the content of an Html element</h1>
+    <!-- <button onclick="document.getElementById.innerHTML= "Hello New Script" ">Click me ! </button> -->
+    <button onclick="return change_Content()">Click me ! </button> 
+    <p id="change_text">This is a demo</p>
+     <script>
+        function change_Content(){
+            document.getElementById("change_text").innerHTML= "Hello New Script" ;
+        }
+     </script>
+
+     <!-- 3 -->
+    <h2>html can change the style of an element</h2>
+    <button type="button" onclick="return Change_style()">Click me !</button>
+    <p id="Change_style">html can change the style of an element</p>
+    <script>
+        function Change_style(){
+            document.getElementById("Change_style").style.fontSize="35px";
+            document.getElementById("Change_style").style.color="red";
+            document.getElementById("Change_style").style.backgroundColor="Yellow";
+        }
+    </script>
+</html>
