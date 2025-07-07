@@ -1,5 +1,5 @@
 // Arrow functions
-//just add => after () by removinf function(keyword)
+//just add => after () by removing function(keyword)
 
 //1
 
