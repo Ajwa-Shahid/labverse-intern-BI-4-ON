@@ -18,4 +18,4 @@ function add_Numbers (...numbers){           //Array will come in numbers
         console.log(`Sum of all numbers is ${Sum}`);
 }
 
-add_Numbers(1, 2, 3, 4, 5, 6, 7, 8);
+add_Numbers(1, 2, 3, 4, 5, 6, 7, 8); 

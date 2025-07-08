@@ -1,6 +1,6 @@
 // iterables 
 // jispe hum for of loop laga sakein
-// string , array , sets are iterable 
+// string , array , sets, maps are iterable 
 
 
 //Iterable on String 
