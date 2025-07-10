@@ -1,5 +1,13 @@
 // Methods (function inside object)
 
+const Method_Obj = {
+    firstName: "Ajwa",
+    Age:20,
+    About (){      
+        console.log(this); 
+        console.log(`My name is ${this.firstName} and my age is ${this.Age}`);   
+    }
+}
 
 //(this) is an obj that calls it's own function in which it's present
 const PersonObj ={
