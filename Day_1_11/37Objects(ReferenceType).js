@@ -1,4 +1,4 @@
-// objects reference type  
+// objects/Instance reference type  
 // arrays are good but not sufficient for real world data 
 // objects store key value pairs  (property:value) 
 //properties are in string by default

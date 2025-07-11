@@ -1,0 +1,41 @@
+// to see obj key 
+
+
+function Create_User (firstName, lastName, email, age, address){
+
+    this.firstName=firstName;       // 2. Added key value in empty obj using this. operator
+    this.lastName=lastName;
+    this.email=email;
+    this.age=age;
+    this.address=address; 
+
+}
+
+console.log(Create_User.prototype);   
+
+Create_User.prototype.about = function(){
+        return `${this.firstName} is ${this.age} years old.`;
+    }
+
+Create_User.prototype.is18 = function(){
+        return this.age >= 18;
+    } 
+
+Create_User.prototype.sing = function(){
+        return "Dynamite";
+    }
+
+
+const User1 = new Create_User("Ajwa", "Shahid", "ajwashahid756@gmail.com", 20,"My Address", );
+
+// to see obj all key 
+for (let key in User1){
+    console.log(key);    // it's giving keys from it's protypes as well due to new keyword
+}
+//to see obj's func key
+
+for (let key in User1){
+    if(User1.hasOwnProperty(key)){   //will give T, F
+        console.log(key);           // will print it's own function property
+    };
+}

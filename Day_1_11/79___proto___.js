@@ -4,7 +4,7 @@
 
 // [[prototype]]
 
-// __proto__ , [[prototype]]
+// __proto__ ,/ [[prototype]]
 
 const obj1 = {
     key1: "value1",
