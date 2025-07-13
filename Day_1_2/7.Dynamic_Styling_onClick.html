@@ -1,0 +1,42 @@
+ <!-- Dynamic Styling on Click
+Create a button and a div element. When the button is clicked,
+toggle a CSS class on the div element. This class should change the background color of the div. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Styling</title>
+    <style>
+
+    .changeDivColor {
+      width: 200px;
+      height: 100px;
+      border: 1px solid black;
+      margin-top: 10px;
+    }
+
+    .active {
+      background-color: palegreen;  /* Class to toggle */   
+    }
+    </style>
+
+</head>
+<body>
+
+    <button id="onclick">Toggle Color</button>
+    <div class="changeDivColor">
+
+    </div>
+    
+    <script>
+        let button = document.getElementById("onclick");
+        let div = document.querySelector(".changeDivColor");
+
+        button.addEventListener("click", function(){
+            div.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>

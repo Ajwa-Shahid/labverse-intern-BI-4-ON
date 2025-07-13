@@ -1,0 +1,44 @@
+<!-- Build a simple to-do list:
+An input field where users can type new tasks. An "Add Task" button.
+An unordered list to display the tasks.
+When the "Add Task" button is clicked, the text from the input field
+should be added as a new list item. Clear the input field after adding a task. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+</head>
+<body>
+
+  <div>
+    <label for="task">Task: </label>
+    <input id="task" type="text" placeholder="Add new task here...">
+    <button onclick="AddTask()">Add Task</button>
+  </div>
+
+  <ul id="output"></ul>
+
+  <script>
+    
+    function AddTask() {
+      let task = document.getElementById("task");
+      let value = task.value;
+
+      if (value.trim() === "") return; // skip if empty
+
+      let li = document.createElement("li");
+      li.textContent = value;
+
+      document.getElementById("output").appendChild(li);
+
+      task.value = ""; // clear input
+    }
+  </script>
+
+</body>
+</html>
+
+</body>
+</html>

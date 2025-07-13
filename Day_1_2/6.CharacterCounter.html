@@ -1,0 +1,27 @@
+<!-- Create an HTML textarea element and a <span> element. 
+Write JavaScript that updates the <span> with the current 
+character count as the user types in the textarea. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter</title>
+</head>
+<body>
+
+    <textarea id="text" placeholder="Type somethinng to get count of characters ">Type: </textarea>
+    <span id="charCount">Characters: 0</span>
+
+    <script>
+         
+            const text = document.getElementById("text");
+            const charCount = document.getElementById("charCount");
+         
+            text.addEventListener("input", function(){
+                charCount.textContent = "Characters: " + text.value.length;
+            })
+    </script>
+</body>
+</html>

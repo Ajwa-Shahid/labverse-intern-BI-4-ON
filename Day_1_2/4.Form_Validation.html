@@ -1,0 +1,45 @@
+<!-- Create an HTML form with an input field for email and a submit button.
+Write JavaScript to validate the email input when the form is submitted.
+If the email is empty or does not contain an "@" symbol, prevent the form
+from submitting and display an error message below the input field. Otherwise,
+display a success message. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    
+    <form action="Action.php">
+
+        <div>
+          <label for="email" >Email: </label>
+          <input id="email" type="text" placeholder="Enter Email"  >
+          <button onclick="validateEmail()">Submit</button>
+        </div>
+    <p id="message"></p>
+    </form>
+   
+
+    <script>
+
+        function validateEmail(){
+
+            const email = document.getElementById("email").value;
+            const mssg = document.getElementById("message");
+
+            if (email===" " || !email.includes("@")){
+                mssg.textContent= "❗ Invalid email.";
+                mssg.style.color= "red";
+            } else {
+               msg.textContent = "✅ Email is valid!";
+               msg.style.color = "green";
+            }
+        }
+
+    </script>
+</body>
+</html>

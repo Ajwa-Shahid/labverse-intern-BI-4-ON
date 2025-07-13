@@ -1,0 +1,40 @@
+<!-- Create a simple digital clock on your web page. Use setInterval to update
+the displayed time every second. The time should show hours, minutes, and seconds (e.g., HH:MM:SS). 
+Consider formatting for single-digit numbers (e.g., 05:07:02). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Clock</title>
+  <style>
+    #clock {
+      font-size: 48px;
+      font-family: monospace;
+      text-align: center;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="clock">00:00:00</div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      let hours = String(now.getHours()).padStart(2, '0');
+      let minutes = String(now.getMinutes()).padStart(2, '0');
+      let seconds = String(now.getSeconds()).padStart(2, '0');
+
+      document.getElementById("clock").textContent = `${hours}:${minutes}:${seconds}`;
+    }
+
+    // Call once immediately
+    updateClock();
+    setInterval(updateClock, 1000);     // then Run the updateClock function every 1000 milliseconds (1 second)
+  </script>
+
+</body>
+</html>

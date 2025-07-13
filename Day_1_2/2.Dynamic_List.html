@@ -1,0 +1,37 @@
+<!-- Write a JavaScript function that takes an array of strings as an argument. 
+The function should dynamically create an unordered list (<ul>) in the HTML
+document, with each string in the array as a list item (<li>). Append this
+list to a designated div element (e.g., <div id="output"></div>).
+
+Example Input: createList(["Apple", "Banana", "Cherry"]) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic List Creation</title>
+</head>
+<body>
+    <div id="output">
+
+    </div>
+    
+    <script >
+    function Strings_Array(Fruits){
+
+        const ul = document.createElement("ul");
+        
+        for (let Fruit of Fruits){
+            const li = document.createElement("li");
+            li.textContent = Fruit;
+            ul.appendChild(li);
+        }
+        
+        document.getElementById("output").appendChild(ul);
+    }
+    
+    Strings_Array(["Kiwi","Mango","Pomegranate","Cherry"]);
+    </script>
+</body>
+</html>
