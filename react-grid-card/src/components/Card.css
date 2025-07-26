@@ -1,0 +1,57 @@
+
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.gridCards {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.gridCards:hover {
+  transform: translateY(-5px);
+  border: 1px solid #ff9900;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.gridCards img:first-of-type {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.gridCards img:nth-of-type(2) {
+  width: 80px;
+  margin-top: 10px;
+}
+
+
+.gridCards button {
+  margin-top: 12px;
+  padding: 10px 16px;
+  border: none;
+  background-color: #ff9900;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gridCards button:hover {
+  background-color: #e88b00;
+}
