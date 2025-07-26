@@ -1,0 +1,172 @@
+.language-courses-section {
+  padding: 90px 30px;
+  background: linear-gradient(to right, #c1dfc1, #ace1f3);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+.language-courses-section h2 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6px 15px;
+  place-items: center;
+  position: relative;
+}
+
+/* ✅ Center last two cards with reduced gap */
+@media (min-width: 993px) {
+  .course-card:nth-child(5) {
+    grid-column: 2;
+    margin-right: 10px; /* ✅ Reduced gap - half the normal spacing */
+  }
+
+  .course-card:nth-child(6) {
+    grid-column: 3;
+    margin-left: 10px; /* ✅ Reduced gap - half the normal spacing */
+  }
+}
+
+.course-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  max-width: 260px;
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.course-card-image {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.course-card-info {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.flag-and-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.flag-icon {
+  width: 30px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.language-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #444;
+  margin: 0;
+}
+
+/* -------------------------------
+   ✅ Responsive Adjustments
+----------------------------------*/
+@media (max-width: 1250px) {
+  .courses-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .course-card:nth-child(5),
+  .course-card:nth-child(6) {
+    margin: 0; /* Reset margins for smaller screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .language-courses-section h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px 16px;
+  }
+  .course-card-image {
+    height: 160px;
+  }
+
+  .course-card:nth-child(5),
+  .course-card:nth-child(6) {
+    margin: 0; /* Reset margins for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .language-courses-section {
+    padding: 50px 15px;
+  }
+  .language-courses-section h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 14px;
+  }
+  .course-card-image {
+    height: 150px;
+  }
+  .language-name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .language-courses-section {
+    padding: 40px 10px;
+  }
+  .language-courses-section h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .courses-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .course-card-image {
+    height: 140px;
+  }
+  .flag-icon {
+    width: 26px;
+  }
+  .language-name {
+    font-size: 17px;
+  }
+}

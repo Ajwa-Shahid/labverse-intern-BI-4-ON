@@ -1,0 +1,142 @@
+/* ============================
+   ✅ PROMO BANNER (Top strip)
+   ============================ */
+
+.promo-banner {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #1b7ef0;
+  color: white;
+  text-align: center;
+  padding: 17px 20px;
+  font-size: 18px;
+  font-weight: 510;
+}
+
+.promo-banner strong {
+  font-weight: 700;
+}
+
+
+/* ============================
+   ✅ HEADER MAIN STYLES
+   ============================ */
+.header {
+  background-color: #fff;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.08); /* ✅ subtle grey shadow */
+  font-family: 'Source Sans 3', sans-serif;
+  z-index: 998;
+  position: relative;
+}
+
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* ============================
+   ✅ LEFT SECTION (Logo + Nav)
+   ============================ */
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo */
+.logo img {
+  height: 25px;
+  margin-right: 30px;
+  
+}
+
+/* ============================
+   ✅ NAVIGATION MENU
+   ============================ */
+.nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  margin-right: 25px;
+}
+
+
+.nav ul li a {
+  text-decoration: none;
+  color: rgb(97, 81, 81);
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #7c7f83;
+}
+
+
+/* ============================
+   ✅ AUTH BUTTONS
+   ============================ */
+.auth-buttons .btn {
+  padding: 10px 26px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 25px;
+  border: 2px solid #007bff;
+  
+}
+
+/* Log In Button */
+.btn-login {
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+  font-weight: 700;
+}
+
+.btn-login:hover {
+  background-color: #e6f2ff;
+}
+
+/* Sign Up Button */
+.btn-signup {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-signup:hover {
+  background-color: #469af3;
+  border-color: #469af3;
+}
+
+/* ============================
+   ✅ MINI HEADER BAR ("Courses")
+   ============================ */
+.mini-header {
+  background-color: white;
+  padding: 17px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1a73e8;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.mini-header a {
+  text-decoration: none;
+  color: #3994FF;
+  padding-left: 60px;
+}
+.mini-header a:hover{
+  color: #86bfff;
+}
