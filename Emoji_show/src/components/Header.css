@@ -1,0 +1,32 @@
+header {
+  width: 100%;          
+}
+.navbar{
+    box-shadow: 0px 5px 15px lightgray;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 180px;
+
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 500px;
+}
+
+.navoptions li:hover{
+    cursor: pointer;
+    color: darkgray;
+    
+}
+.navbar h3{
+    font-weight: 400;
+    font-size: 21px;
+}
+.navbar li{
+    font-size: 19px;
+}
